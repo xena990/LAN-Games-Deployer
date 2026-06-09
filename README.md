@@ -4,6 +4,8 @@ A lightweight Windows desktop app that lets each PC:
 - choose a local `Game Folder` to share,
 - auto-discover other PCs on the same LAN,
 - list local and remote games in one UI,
+- chat with other PCs on the LAN,
+- see what other players are currently playing,
 - search, filter, and sort games,
 - preview local cover/banner images from game folders,
 - launch local game executables directly,

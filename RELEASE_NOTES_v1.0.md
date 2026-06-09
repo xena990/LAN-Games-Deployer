@@ -8,6 +8,7 @@
 - Launch games from a selected executable.
 - Show cover/banner art, icons, and logos when available.
 - Use LAN chat and friend/status presence.
+- See what other PCs on the LAN are playing.
 - Keep settings local to the machine.
 
 ## Images
