@@ -1,4 +1,4 @@
-# LAN Games Deployer
+# <img src="assets/app_icon.png" alt="LAN Games Deployer logo" width="28" align="middle"> LAN Games Deployer
 
 A lightweight Windows desktop app that lets each PC:
 - choose a local `Game Folder` to share,
@@ -68,7 +68,7 @@ Output executable:
 
 ## Screenshots
 
-![App icon](assets/app_icon.png)
+![LAN Games Deployer screenshot](assets/screenshots/v1.0-main.png)
 
 ![Atomic Bomberman banner](cpp/release/LAN%20Games%20Deployer%20v1.0/data/assets/games/atomic-bomberman/banner.png)
 

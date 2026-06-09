@@ -1,4 +1,4 @@
-# LAN Games Deployer v1.0 Release Notes
+# <img src="assets/app_icon.png" alt="LAN Games Deployer logo" width="28" align="middle"> LAN Games Deployer v1.0 Release Notes
 
 **LAN Games Deployer** is a LAN game sharing and launcher app for Windows PCs.
 
@@ -12,7 +12,7 @@
 
 ## Images
 
-![App icon](assets/app_icon.png)
+![LAN Games Deployer screenshot](assets/screenshots/v1.0-main.png)
 
 ![Need for Speed Carbon banner](cpp/release/LAN%20Games%20Deployer%20v1.0/data/assets/games/need-for-speed-carbon/banner.png)
 
