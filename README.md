@@ -70,8 +70,8 @@ Output executable:
 
 ## Screenshots
 
-![LAN Games Deployer screenshot](assets/screenshots/v1.0-main.png)
+![LAN Games Deployer screenshot 1](assets/screenshots/v1.0-1.png)
 
-![Atomic Bomberman banner](cpp/release/LAN%20Games%20Deployer%20v1.0/data/assets/games/atomic-bomberman/banner.png)
+![LAN Games Deployer screenshot 2](assets/screenshots/v1.0-2.png)
 
 
