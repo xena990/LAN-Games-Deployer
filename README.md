@@ -13,6 +13,10 @@ A lightweight Windows desktop app that lets each PC:
 - open local game folders, and
 - download a remote game folder directly (files/folders, no ZIP).
 
+## Version 1.0
+
+This release focuses on LAN game sharing, direct file transfer, Steam-style presentation, and a lightweight Windows-friendly footprint.
+
 ## How It Works
 - LAN discovery: UDP broadcast on port `50055`.
 - File serving: local HTTP server on port `50111`.
@@ -61,4 +65,11 @@ Output executable:
 - This prototype assumes trusted LAN usage.
 - Large folders may take time to transfer over LAN.
 - Tkinter displays PNG/GIF reliably; some JPG files may not preview depending on runtime.
+
+## Screenshots
+
+![App icon](assets/app_icon.png)
+
+![Atomic Bomberman banner](cpp/release/LAN%20Games%20Deployer%20v1.0/data/assets/games/atomic-bomberman/banner.png)
+
 
