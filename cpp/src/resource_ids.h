@@ -1,0 +1,8 @@
+#pragma once
+
+#define IDC_SEARCH 1001
+#define IDC_GAMELIST 1002
+#define IDC_PLAYGET 1003
+#define IDC_SHAREBTN 1004
+#define IDC_DETAILS 1005
+#define IDC_STATUS 1006
