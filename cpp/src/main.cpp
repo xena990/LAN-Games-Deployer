@@ -2260,7 +2260,7 @@ static void SetManualSgdbIdForGame(const std::wstring& gameName, int id) {
 
 static std::wstring HttpGetText(const std::wstring& host, INTERNET_PORT port, const std::wstring& path, const std::wstring& auth = L"") {
     std::wstring result;
-    HINTERNET hSession = WinHttpOpen(L"LANGamesDeployerCpp/1.0", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY, WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0);
+    HINTERNET hSession = WinHttpOpen(L"LANGamesDeployerCpp/1.1", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY, WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0);
     if (!hSession) return result;
     HINTERNET hConnect = WinHttpConnect(hSession, host.c_str(), port, 0);
     if (!hConnect) { WinHttpCloseHandle(hSession); return result; }
@@ -2300,7 +2300,7 @@ static bool HttpDownloadFile(const std::wstring& url, const std::wstring& dest, 
     INTERNET_PORT port = uc.nPort;
     bool https = uc.nScheme == INTERNET_SCHEME_HTTPS;
 
-    HINTERNET s = WinHttpOpen(L"LANGamesDeployerCpp/1.0", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY, WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0);
+    HINTERNET s = WinHttpOpen(L"LANGamesDeployerCpp/1.1", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY, WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0);
     if (!s) return false;
     HINTERNET c = WinHttpConnect(s, h.c_str(), port, 0);
     if (!c) { WinHttpCloseHandle(s); return false; }
@@ -2397,9 +2397,9 @@ static void DownloadSteamGridForSelected() {
 
 static bool DownloadSteamGridForGameName(const std::wstring& game) {
     int gameId = GetManualSgdbIdForGame(game);
+    std::wstring apiKey = GetSteamGridDbApiKey();
     if (gameId <= 0) {
         std::wstring searchPath = L"/api/v2/search/autocomplete/" + UrlEncodeSimple(game);
-        std::wstring apiKey = GetSteamGridDbApiKey();
         std::wstring searchJson = HttpGetText(L"www.steamgriddb.com", INTERNET_DEFAULT_HTTPS_PORT, searchPath, apiKey);
         gameId = JsonFindFirstId(searchJson);
         std::wstring nameHit = JsonFindFirstName(searchJson);
@@ -2416,7 +2416,6 @@ static bool DownloadSteamGridForGameName(const std::wstring& game) {
     std::wstringstream p2; p2 << L"/api/v2/heroes/game/" << gameId;
     std::wstringstream p3; p3 << L"/api/v2/grids/game/" << gameId;
     std::wstringstream p4; p4 << L"/api/v2/logos/game/" << gameId;
-    std::wstring apiKey = GetSteamGridDbApiKey();
     std::wstring iconJson = HttpGetText(L"www.steamgriddb.com", INTERNET_DEFAULT_HTTPS_PORT, p1.str(), apiKey);
     std::wstring bannerJson = HttpGetText(L"www.steamgriddb.com", INTERNET_DEFAULT_HTTPS_PORT, p2.str(), apiKey);
     std::wstring logoJson = HttpGetText(L"www.steamgriddb.com", INTERNET_DEFAULT_HTTPS_PORT, p4.str(), apiKey);

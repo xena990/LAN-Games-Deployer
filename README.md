@@ -15,7 +15,7 @@ A lightweight Windows desktop app that lets each PC:
 - open local game folders, and
 - download a remote game folder directly (files/folders, no ZIP).
 
-## Version 1.0
+## Version 1.1
 
 This release focuses on LAN game sharing, direct file transfer, Steam-style presentation, and a lightweight Windows-friendly footprint.
 
@@ -73,5 +73,3 @@ Output executable:
 ![LAN Games Deployer screenshot 1](assets/screenshots/v1.0-1.png)
 
 ![LAN Games Deployer screenshot 2](assets/screenshots/v1.0-2.png)
-
-

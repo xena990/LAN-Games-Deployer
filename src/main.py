@@ -671,7 +671,7 @@ class LanGamesApp:
     def _apply_window_icon(self) -> None:
         if os.name == "nt":
             try:
-                ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("Undertaker.LANGamesDeployer.1.0")
+                ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("Undertaker.LANGamesDeployer.1.1")
             except Exception:
                 pass
 
@@ -2045,7 +2045,7 @@ def main() -> None:
     handle_setup_firewall_mode()
     if os.name == "nt":
         try:
-            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("Undertaker.LANGamesDeployer.1.0")
+            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("Undertaker.LANGamesDeployer.1.1")
         except Exception:
             pass
     root = tk.Tk()

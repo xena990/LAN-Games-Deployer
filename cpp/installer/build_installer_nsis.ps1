@@ -4,7 +4,7 @@ param(
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $nsi = Join-Path $scriptDir 'LANGamesDeployer_xp.nsi'
-$releaseExe = Join-Path $scriptDir '..\build-vs2017-xp32\Release\LANGamesDeployerCpp.exe'
+$releaseExe = Join-Path $scriptDir '..\release\LAN Games Deployer v1.1\LANGamesDeployer.exe'
 
 if (-not (Test-Path $nsi)) { Write-Error "NSIS script not found: $nsi"; exit 1 }
 if (-not (Test-Path $releaseExe)) { Write-Error "Release EXE not found: $releaseExe"; exit 1 }
@@ -33,4 +33,4 @@ $exitCode = $LASTEXITCODE
 Pop-Location
 
 if ($exitCode -ne 0) { exit $exitCode }
-Write-Host "Installer built: $outDir\LAN_Games_Deployer_Setup_v1.0_xp32.exe"
+Write-Host "Installer built: $outDir\LAN_Games_Deployer_Setup_v1.1_xp32.exe"

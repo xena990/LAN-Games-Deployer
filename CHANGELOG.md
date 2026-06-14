@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.1
+
+### Fixed
+- Asset export now creates a real ZIP archive with the selected game assets.
+- Asset import no longer depends on Explorer's ZIP shell integration and now extracts directly, including on Windows XP.
+- Release metadata and installer version updated for the 1.1 build.
+
+### Added
+- Versioned release notes for 1.1.
+
 ## v1.0
 
 ### Added
