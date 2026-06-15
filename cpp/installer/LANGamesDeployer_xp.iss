@@ -1,8 +1,8 @@
 #define MyAppName "LAN Games Deployer"
-#define MyAppVersion "1.1"
+#define MyAppVersion "1.2"
 #define MyAppPublisher "xEna"
 #define MyAppExeName "LANGamesDeployer.exe"
-#define MySourceDir "..\\release\\LAN Games Deployer v1.1"
+#define MySourceDir "..\\release\\LAN Games Deployer v1.2"
 
 [Setup]
 AppId={{3E88FB87-AB2A-4A3E-923E-6653F4B14729}
@@ -13,7 +13,7 @@ VersionInfoVersion={#MyAppVersion}
 DefaultDirName={pf}\\LAN Games Deployer
 DefaultGroupName=LAN Games Deployer
 DisableProgramGroupPage=yes
-OutputBaseFilename=LAN_Games_Deployer_Setup_v1.1_xp32
+OutputBaseFilename=LAN_Games_Deployer_Setup_v1.2_xp32
 OutputDir=.\\output
 SetupIconFile=..\\..\\assets\\app_icon_xp.ico
 UninstallDisplayIcon={app}\\{#MyAppExeName}

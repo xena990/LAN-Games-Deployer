@@ -1,7 +1,7 @@
 ; NSIS installer for Windows XP x86 compatible package
 Unicode false
-Name "LAN Games Deployer 1.1"
-OutFile "output\LAN_Games_Deployer_Setup_v1.1_xp32.exe"
+Name "LAN Games Deployer 1.2"
+OutFile "output\LAN_Games_Deployer_Setup_v1.2_xp32.exe"
 InstallDir "$PROGRAMFILES\LAN Games Deployer"
 RequestExecutionLevel admin
 ShowInstDetails show
@@ -9,7 +9,7 @@ ShowUnInstDetails show
 XPStyle on
 
 !define APP_EXE "LANGamesDeployer.exe"
-!define SRC_DIR "..\release\LAN Games Deployer v1.1"
+!define SRC_DIR "..\release\LAN Games Deployer v1.2"
 
 Icon "..\..\assets\app_icon_xp.ico"
 UninstallIcon "..\..\assets\app_icon_xp.ico"
@@ -31,7 +31,7 @@ Section "Core Files (required)" SEC_CORE
   WriteUninstaller "$INSTDIR\Uninstall.exe"
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\LAN Games Deployer" "DisplayName" "LAN Games Deployer"
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\LAN Games Deployer" "UninstallString" "$INSTDIR\Uninstall.exe"
-  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\LAN Games Deployer" "DisplayVersion" "1.1"
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\LAN Games Deployer" "DisplayVersion" "1.2"
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\LAN Games Deployer" "Publisher" "xEna"
 SectionEnd
 

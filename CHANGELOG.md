@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.2
+
+### Updated
+- Repacked the latest XP32 build into a fresh installer and portable ZIP release.
+- Release names and installer metadata updated for the new 1.2 package.
+
 ## v1.1
 
 ### Fixed
